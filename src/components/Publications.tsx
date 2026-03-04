@@ -11,9 +11,9 @@ const PublicationItem: React.FC<{ pub: Publication }> = ({ pub }) => {
       <div className="flex-shrink-0">
         {pub.image ? (
           <div className="w-full sm:w-40 h-32 rounded-lg overflow-hidden border border-slate-200 shadow-sm group-hover:shadow-md transition-shadow">
-            <img 
-              src={pub.image} 
-              alt={pub.title} 
+            <img
+              src={pub.image}
+              alt={pub.title}
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -29,9 +29,9 @@ const PublicationItem: React.FC<{ pub: Publication }> = ({ pub }) => {
       <div className="flex-1 min-w-0 font-serif">
         {/* Title */}
         {pub.url ? (
-          <a 
-            href={pub.url} 
-            target="_blank" 
+          <a
+            href={pub.url}
+            target="_blank"
             rel="noopener noreferrer"
             className="block"
           >
@@ -48,11 +48,11 @@ const PublicationItem: React.FC<{ pub: Publication }> = ({ pub }) => {
         {/* Authors */}
         <div className="text-slate-800 text-sm sm:text-[15px] leading-relaxed mb-1">
           {pub.authors ? (
-            <span dangerouslySetInnerHTML={{ 
+            <span dangerouslySetInnerHTML={{
               __html: pub.authors.replace(
-                /(Daojun Liang|Liang Daojun|D. Liang|梁道君)/g, 
+                /(Daojun Liang|Liang Daojun|D. Liang|梁道君)/g,
                 '<span class="font-bold text-slate-900">$1</span>'
-              ) 
+              )
             }} />
           ) : (
             <span className="text-slate-500 italic">Authors not listed</span>
@@ -69,10 +69,10 @@ const PublicationItem: React.FC<{ pub: Publication }> = ({ pub }) => {
           {pub.links && pub.links.length > 0 ? (
             pub.links.map((link, idx) => (
               <React.Fragment key={idx}>
-                <a 
+                <a
                   href={link.url}
                   target="_blank"
-                  rel="noopener noreferrer" 
+                  rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 hover:underline font-medium"
                 >
                   {link.label}
@@ -82,11 +82,10 @@ const PublicationItem: React.FC<{ pub: Publication }> = ({ pub }) => {
             ))
           ) : (
             // Fallback tags if no links are provided
-             pub.tags.map((tag, tIdx) => (
-              <span key={tIdx} className={`px-2 py-0.5 rounded text-[10px] border ${
-                tag.includes('CCF A') ? 'bg-rose-50 text-rose-600 border-rose-100' :
-                'bg-slate-50 text-slate-500 border-slate-200'
-              }`}>
+            pub.tags.map((tag, tIdx) => (
+              <span key={tIdx} className={`px-2 py-0.5 rounded text-[10px] border ${tag.includes('CCF A') ? 'bg-rose-50 text-rose-600 border-rose-100' :
+                  'bg-slate-50 text-slate-500 border-slate-200'
+                }`}>
                 {tag}
               </span>
             ))
@@ -99,7 +98,7 @@ const PublicationItem: React.FC<{ pub: Publication }> = ({ pub }) => {
 
 export const Publications: React.FC = () => {
   return (
-    <section className="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 p-6 sm:p-8 md:p-10 transition-all duration-300 hover:shadow-2xl hover:shadow-slate-200/70 transform hover:-translate-y-1">
+    <section id="publications" className="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 p-6 sm:p-8 md:p-10 transition-all duration-300 hover:shadow-2xl hover:shadow-slate-200/70 transform hover:-translate-y-1">
       <SectionTitle title="代表性学术论文" icon={<Award size={20} sm:size={24} />} />
 
       <div className="space-y-2 divide-y divide-slate-100">

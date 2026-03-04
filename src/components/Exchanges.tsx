@@ -5,7 +5,7 @@ import { Calendar, ChevronRight } from 'lucide-react';
 
 export const Exchanges: React.FC = () => {
   return (
-    <section className="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 p-6 sm:p-8 md:p-10 transition-all duration-300 hover:shadow-2xl hover:shadow-slate-200/70 transform hover:-translate-y-1">
+    <section id="exchanges" className="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 p-6 sm:p-8 md:p-10 transition-all duration-300 hover:shadow-2xl hover:shadow-slate-200/70 transform hover:-translate-y-1">
       <SectionTitle title="学术交流与会议" icon={<Calendar size={20} sm:size={24} />} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
         {exchanges.map((exchange, idx) => (

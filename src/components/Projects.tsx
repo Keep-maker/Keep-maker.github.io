@@ -5,7 +5,7 @@ import { Layers, Calendar, Trophy } from 'lucide-react';
 
 export const Projects: React.FC = () => {
     return (
-        <section className="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 p-6 sm:p-8 md:p-10 transition-all duration-300 hover:shadow-2xl hover:shadow-slate-200/70 transform hover:-translate-y-1">
+        <section id="projects" className="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 p-6 sm:p-8 md:p-10 transition-all duration-300 hover:shadow-2xl hover:shadow-slate-200/70 transform hover:-translate-y-1">
             <SectionTitle title="核心科研项目" icon={<Layers size={20} sm:size={24} />} />
             <div className="space-y-10 sm:space-y-12">
                 {projects.map((project, idx) => (

@@ -11,7 +11,7 @@ export const Sidebar: React.FC = () => {
           <div className="absolute -bottom-14 left-1/2 -translate-x-1/2">
             <div className="w-32 h-32 rounded-3xl border-4 border-white overflow-hidden shadow-2xl bg-slate-50">
               <img
-                src={personalInfo.photo}
+                src="/images/dafc5bd0cfff3aeaa1abf4f14c11b1f1.jpg"
                 alt={personalInfo.name}
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 loading="lazy"
