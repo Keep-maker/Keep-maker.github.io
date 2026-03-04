@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 梁道君 - 个人简历
 
-# Run and deploy your AI Studio app
+这是一个基于 React + TypeScript + Vite 构建的个人学术简历网站。
 
-This contains everything you need to run your app locally.
+## 技术栈
 
-View your app in AI Studio: https://ai.studio/apps/drive/1sR8fvEX5U1LNYmBrfRuLdfwBGI2PxR-x
+- **框架**: React 19
+- **语言**: TypeScript
+- **构建工具**: Vite
+- **样式**: Tailwind CSS
+- **图标**: Lucide React
 
-## Run Locally
+## 功能特性
 
-**Prerequisites:**  Node.js
+- 响应式设计，支持移动端和桌面端
+- 平滑的动画效果和交互体验
+- 学术论文展开/收起功能
+- 一键导出 PDF
+- 优化的性能和可访问性
 
+## 部署
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+本项目已部署到 GitHub Pages，访问地址：https://keep-maker.github.io
+
+## 本地开发
+
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
+```
+
+## 作者
+
+梁道君 - 副教授 @ 齐鲁工业大学（山东省科学院）计算学部
